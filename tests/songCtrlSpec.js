@@ -123,7 +123,7 @@ describe("Song rate controller", function() {
     expect(scope.isEmpty("test")).toEqual(false);
     expect(scope.isEmpty("  test  ")).toEqual(false);
     expect(scope.isEmpty("  ")).toEqual(true);
-    expect(scope.isEmpty("")).toEqual(false); //Failure case, should be equal to false
+    expect(scope.isEmpty("")).toEqual(true);
     expect(scope.isEmpty(null)).toEqual(true);
     expect(scope.isEmpty(undefined)).toEqual(true);
   });

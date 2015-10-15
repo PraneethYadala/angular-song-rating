@@ -24,7 +24,7 @@ describe("Rating directive", function() {
     expect(element.find(".fa.fa-star-o").length).toEqual(3);
     expect(element.find(".fa.fa-star").length).toEqual(2);
     expect(element.find(".rating-highlight").length).toEqual(0);
-    expect(element.find(".rating-normal").length).toEqual(3);//Expected to failure - success value should equal to 5
+    expect(element.find(".rating-normal").length).toEqual(5);
   });
   
   it('changes hovering index', function() {
