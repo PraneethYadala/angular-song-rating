@@ -31,11 +31,10 @@ module.exports = function(config) {
     reporters: [ 'progress' ],
     colors: true,
     autoWatch: false,
-    browsers: [ 'PhantomJS','Chrome' ],
+    browsers: [ 'PhantomJS' ],
     singleRun: true,
     plugins: [
       'karma-phantomjs-launcher',
-      'karma-chrome-launcher',
       'karma-jasmine',
       'karma-ng-html2js-preprocessor',
       'karma-junit-reporter',
