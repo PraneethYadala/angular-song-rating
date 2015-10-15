@@ -36,7 +36,7 @@ describe('Song storage service', function() {
     var data = scope.get();
     expect(data.length).toEqual(1);
     expect(data[0].title).toEqual("Title");
-    expect(data[0].artist).toEqual("Artist");
+    expect(data[0].artist).toEqual("Album"); //Failure case ,should equal to Artist
     expect(localStorage.getItem).toHaveBeenCalledWith('myApp.songs');
   });
   
